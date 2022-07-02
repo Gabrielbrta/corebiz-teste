@@ -4,9 +4,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Corebiz.</title>
 </head>
 <body>
-  
+  <header id="header">
+    <ul class="header-itens">
+      <li class="logo-header">
+        <img src="assets/icons/logo-header.svg" alt="Logo da Corebiz">
+      </li>
+      <li class="input-header">
+        <input type="text" placeholder="O que está procurando?">
+        <img src="assets/icons/lupa.svg" alt="icone de lupa para pesquisar">
+      </li>
+      <li class="conta-header">
+        <img src="./assets/icons/usuario.svg" alt="Icone de uma silhueta de um homem">
+        <a href="#"><p>Minha Conta</p></a>
+      </li>
+      <li class="cart-header">
+        <img src="./assets/icons/cart.svg" alt="icone de um carrinho de compras">
+        <span class="cart-count" data-contador="">1</span>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <div class="slide-home">
+      <div class="slides js-carousel --simple">
+        <div class="slide">
+          <img src="./assets/imagens/slide-apresentacao.svg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/imagens/slide-apresentacao.svg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/imagens/slide-apresentacao.svg" alt="">
+        </div>
+        <div class="slide-home">
+          <img src="./assets/imagens/slide-apresentacao.svg" alt="">
+        </div>
+      </div>
+      <div rple="tablist"></div>
+    </div>
+  </main>
+  <script src="./scripts.js"></script>
 </body>
 </html>
