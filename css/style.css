@@ -147,6 +147,11 @@ picture img{
   background: #C0c0c0;
 }
 
+.swiper-button-prev,
+.swiper-button-next{
+  color: black;
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;

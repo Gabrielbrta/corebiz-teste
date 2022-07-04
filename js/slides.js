@@ -1,16 +1,15 @@
-new Glider(document.querySelector('.js-carousel--simple'), {
+export const glider = () => new Glider(document.querySelector('.js-carousel--simple'), {
   slidesToShow: 1,
   slidesToScroll: 1,
   scrollLock: true,
   draggable: true,
   dots: '#dots',
   settings: {
-    duration: 0,
+    duration: 100,
   }
 })
 
-
-const swiper = new Swiper('.swiper', {
+export const swiper = () => new Swiper('.swiper', {
   spaceBetween: 10,
   navigation: {
     nextEl: '.swiper-button-next',
