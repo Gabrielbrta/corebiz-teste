@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/glider.min.css" type="text/css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Corebiz.</title>
@@ -83,31 +84,39 @@
       <div role="tablist" id="dots" class="glider-dots"></div>
     </section>
     <section class="produtos-container">
-      <h3>Mais Vendidos</h3>
-      <span class="divisor"></span>
-      <div class="glider-containder-produtos">
-        <button aria-label="Previous" class="prev"><img src="./assets/icons/arrow-left.svg"></button>
-        <div class="glider-produtos produtos">
-          <div class="box">
+      <div class="text">
+        <h3>Mais Vendidos</h3>
+        <span class="divisor"></span>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div  class="box swiper-slide">
+            <img src="https://corebiz-test.herokuapp.com/images/product-1.png" alt="">
+            <p>SAPATO FLOATER PRETO</p>
+            <img src="./assets/imagens/Rating-1.svg" alt="">
+            <p>por R$ 259,90</p>
+            <p>ou em 9x de R$ 28,87</p>
+            <a href="#">COMPRAR</a>
+          </div>
+          <div class="box swiper-slide">
             <img src="https://corebiz-test.herokuapp.com/images/product-1.png" alt="">
           </div>
-          <div class="box">
+          <div class="box swiper-slide">
             <img src="https://corebiz-test.herokuapp.com/images/product-1.png" alt="">
           </div>
-          <div class="box">
+          <div class="box swiper-slide">
             <img src="https://corebiz-test.herokuapp.com/images/product-1.png" alt="">
           </div>
-          <div class="box">
-            <img src="https://corebiz-test.herokuapp.com/images/product-1.png" alt="">
-          </div>
-          <div class="box">
+          <div class="box swiper-slide">
             <img src="https://corebiz-test.herokuapp.com/images/product-1.png" alt="">
           </div>
         </div>
-        <button aria-label="Next" class="next"><img src="./assets/icons/arrow-right.svg"></button>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
   </main>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./glider.min.js"></script>
   <script src="./scripts.js"></script>
 </body>
