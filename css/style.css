@@ -1,5 +1,5 @@
 :root {
-  --nunito:'Nunito', helvetica,  sans-serif;
+  --nunito:'Nunito', helvetica, sans-serif;
   --cor-destaque: #F8475F;
   --cor-cinza: #7A7A7A;
 }
@@ -169,6 +169,41 @@ picture img{
 }
 
 .box {
-  display: block;
   text-align: center;
+}
+
+.product-box:hover {
+  background: #E6E8EA;
+}
+
+.title-products {
+  font-family: var(--nunito);
+  font-size: .75rem;
+  font-weight: 600;
+  color: #7A7A7A;
+  margin-bottom: 5px;
+}
+
+.products-price {
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.products-price-options {
+  font-weight: 400;
+  font-size: .687rem;
+  color: #7A7A7A;
+
+}
+
+.button-buy {
+  color: white;
+  display: inline-block;
+  font-family: var(--nunito);
+  background: black;
+  padding: 8px 28px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: .75rem;
 }
