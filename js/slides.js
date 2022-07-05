@@ -5,12 +5,11 @@ export const glider = () => new Glider(document.querySelector('.js-carousel--sim
   draggable: true,
   dots: '#dots',
   settings: {
-    duration: 100
+    duration: 100,
   }
 });
 
 export const swiper = () => new Swiper('.swiper', {
-  spaceBetween: 10,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -26,9 +25,9 @@ export const swiper = () => new Swiper('.swiper', {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-    640: {
+    740: {
       slidesPerView: 4,
-      spaceBetween: 10,
-    }
-  }
+      spaceBetween: 40,
+    },
+  },
 });

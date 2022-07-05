@@ -171,8 +171,8 @@ picture img{
   margin: 0 auto 20px auto;
 }
 
-.box {
-  text-align: center;
+.product-box {
+  flex-direction: column;
 }
 
 .product-box:hover {
@@ -209,8 +209,4 @@ picture img{
   margin: 10px 0px 15px 0px;
   font-weight: bold;
   font-size: .75rem;
-}
-
-[data-products="js-produtcs"] {
-  display: flex;
 }
