@@ -3,5 +3,5 @@ import fetchProduto from "./fetch-produto.js"
 
 
 glider();
-fetchProduto()
+fetchProduto();
 swiper();

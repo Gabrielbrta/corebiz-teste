@@ -13,6 +13,9 @@
   text-decoration: none;
   font-family: var(--nunito);
 }
+#text {
+  display: none;
+}
 
 #header {
   padding: 20px 0px;
@@ -163,7 +166,7 @@ picture img{
   margin: 0 auto;
 }
 
-.text {
+.text-products {
   max-width: 1200px;
   margin: 0 auto 20px auto;
 }
@@ -203,7 +206,11 @@ picture img{
   background: black;
   padding: 8px 28px;
   border-radius: 5px;
-  margin-top: 10px;
+  margin: 10px 0px 15px 0px;
   font-weight: bold;
   font-size: .75rem;
+}
+
+[data-products="js-produtcs"] {
+  display: flex;
 }
