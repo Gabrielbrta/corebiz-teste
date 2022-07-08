@@ -3,5 +3,5 @@ import { glider, swiper } from "./slides.js";
 
 
 glider();
-fetchProduto('[data-products="js-produtcs"]');
+fetchProduto();
 swiper();
