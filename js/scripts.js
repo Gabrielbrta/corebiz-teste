@@ -1,5 +1,5 @@
-import { glider, swiper } from "./slides.js";
 import fetchProduto from "./fetch-produto.js"
+import { glider, swiper } from "./slides.js";
 
 
 glider();
