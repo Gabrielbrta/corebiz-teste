@@ -154,10 +154,13 @@ picture img{
 .swiper-button-prev,
 .swiper-button-next{
   color: black;
+  width: 5px;
+  height: 5px;
+  
 }
 
 .swiper {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -170,8 +173,23 @@ picture img{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 216px;
+  margin-left: 50px;
 }
 
+div.off {
+  display: block;
+  position: absolute;
+  z-index: 15;
+  right: -110px;
+  top: -140px;
+  background: #F8475F;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+}
 
 .title-products {
   font-family: var(--nunito);
@@ -187,7 +205,7 @@ picture img{
 }
 
 .products-price {
-  font-weight: 900;
+  font-weight: bold;
   font-size: 1.25rem;
 }
 

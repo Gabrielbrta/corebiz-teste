@@ -19,15 +19,15 @@ export const swiper = () => new Swiper('.swiper', {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 35,
     },
     480: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 30,
     },
     740: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
   },
 });
