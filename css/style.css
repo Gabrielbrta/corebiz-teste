@@ -8,7 +8,6 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  outline: none;
   list-style: none;
   text-decoration: none;
   font-family: var(--nunito);
@@ -93,6 +92,10 @@
   overflow: hidden;
 }
 
+.glider-slide {
+  cursor: pointer;
+}
+
 picture {
   position: relative;
 }
@@ -160,8 +163,8 @@ picture img{
 }
 
 .swiper {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1300px;
+  margin: 0 auto 0 auto;
 }
 
 .text-products {
@@ -177,18 +180,36 @@ picture img{
   overflow: hidden;
   max-width: 216px;
   margin-left: 50px;
+  transition: .2s;
+}
+
+.product-box:hover .button-buy {
+  opacity: 1;
+}
+
+.product-box:hover {
+  background: #E6E8EA;
 }
 
 div.off {
   display: block;
   position: absolute;
   z-index: 15;
-  right: -110px;
-  top: -140px;
+  right: -85px;
+  top: -85px;
   background: #F8475F;
-  width: 200px;
-  height: 200px;
-  transform: rotate(45deg);
+  width: 170px;
+  height: 160px;
+  clip-path: polygon(50% 50%, 50% 100%, 0 50%);
+}
+
+div.off p {
+  position: absolute;
+  top: 100px;
+  left: 45px;
+  color: #FFF;
+  z-index: 40;
+  font-weight: 900;
 }
 
 .title-products {
@@ -196,12 +217,13 @@ div.off {
   font-size: .75rem;
   font-weight: 600;
   color: #7A7A7A;
-  margin-bottom: 5px;
+  margin: 8px 0 5px 0;
 }
 
 .lastprice {
   text-decoration: line-through;
   color: #7A7A7A;
+  font-size: .75rem;
 }
 
 .products-price {
@@ -209,9 +231,9 @@ div.off {
   font-size: 1.25rem;
 }
 
-.products-price-options {
+.havePrice {
   font-weight: 400;
-  font-size: .687rem;
+  font-size: .69rem;
   color: #7A7A7A;
 
 }
@@ -226,4 +248,5 @@ div.off {
   margin: 10px 0px 15px 0px;
   font-weight: bold;
   font-size: .75rem;
+  opacity: 0;
 }

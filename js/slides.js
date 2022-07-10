@@ -10,24 +10,23 @@ export const glider = () => new Glider(document.querySelector('.js-carousel--sim
 });
 
 export const swiper = () => new Swiper('.swiper', {
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-
+ 
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 35,
+      spaceBetween: 10,
     },
     480: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
     740: {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 50,
     },
   },
 });
