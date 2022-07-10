@@ -1,5 +1,6 @@
 :root {
-  --nunito:'Nunito', helvetica, sans-serif;
+  --nunito: 'Nunito', arial, helvetica, sans-serif;
+  --lato: 'Lato', arial, helvetica, sans-serif;
   --cor-destaque: #F8475F;
   --cor-cinza: #7A7A7A;
 }
@@ -249,4 +250,46 @@ div.off p {
   font-weight: bold;
   font-size: .75rem;
   opacity: 0;
+}
+
+.newsletter {
+  text-align: center;
+  background: #F2F2F2;
+  padding: 24px 0;
+}
+
+.newsletter h2 {
+  font-size: 1.38rem;
+  font-family: var(--lato);
+  font-weight: bold;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formulario input {
+  padding: 16px;
+  font-family: var(--lato);
+  font-weight: bold;
+  margin: 16px 8px;
+  width: 280px;
+  font-size: .75rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.formulario input::placeholder {
+  font-family: var(--lato);
+  font-weight: bold;
+}
+
+.formulario .btn-newsletter {
+  width: 140px;
+  background: black;
+  color: white;
+  font-size: .875rem;
+  cursor: pointer;
 }
