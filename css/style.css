@@ -267,18 +267,43 @@ div.off p {
 .formulario {
   display: flex;
   justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
   flex-wrap: wrap;
 }
+
 
 .formulario input {
   padding: 16px;
   font-family: var(--lato);
   font-weight: bold;
-  margin: 16px 8px;
+  margin: 16px 8px 5px auto;
   width: 280px;
   font-size: .75rem;
   border: none;
   border-radius: 5px;
+}
+
+.inputdata {
+  display: flex;
+  text-align: left;
+}
+
+form.formulario.invalido input.fill {
+  border: 1px solid #D7182A;
+}
+
+.errorpost {
+  opacity: 0;
+}
+
+.errorpost.invalido {
+  opacity: 1;
+  display: block;
+  font-size: .75rem;
+  color: #D7182A;
+  font-family: var(--lato);
+  margin-left: 5px;
 }
 
 .formulario input::placeholder {
@@ -288,10 +313,16 @@ div.off p {
 
 .formulario .btn-newsletter {
   width: 140px;
+  max-height: 48px;
   background: black;
   color: white;
   font-size: .875rem;
   cursor: pointer;
+  transition: .3s;
+}
+
+.formulario .btn-newsletter:hover {
+  background: #333333;
 }
 
 .footer {

@@ -100,9 +100,17 @@
     <section class="newsletter">
       <h2>Participe de nossas news com promoções e novidades!</h2>
       <form class="formulario" action="newsletter">
-        <input id="name" name="nome" type="text" placeholder="Digite seu nome"/>
-        <input id="email" name="email" type="email" placeholder="Digite seu email"/>
-        <input class="btn-newsletter" type="submit" value="Eu quero!"/>
+        <div class="inputdata">
+          <div class="name-input">
+            <input class="fill" id="name" name="nome" type="text" placeholder="Digite seu nome"/>
+            <p class="errorpost">Preencha com seu nome completo</p>
+          </div>
+          <div class="email-input">
+            <input class="fill" id="email" name="email" type="email" placeholder="Digite seu email"/>
+            <p class="errorpost">Preencha com um e-mail válido</p>
+          </div>
+          <input class="btn-newsletter" type="submit" value="Eu quero!"/>
+        </div>
       </form>
     </section>
     <footer class="footer">
