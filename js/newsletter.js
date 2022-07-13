@@ -16,8 +16,8 @@ function fetchPostDatas(element) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(element)
-  }).then((r) => {
-    if (!r.ok) {
+  }).then((response) => {
+    if (!response.ok) {
       elements.form.classList.add(invalidClass);
       elements.inputs.forEach(item => item.classList.add(invalidClass))
     } else {
