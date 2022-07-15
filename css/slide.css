@@ -1,0 +1,54 @@
+.slide-home {
+  position: relative;
+}
+
+.slides {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.glider-slide {
+  cursor: pointer;
+}
+
+picture {
+  position: relative;
+}
+
+picture img{
+  margin: auto;
+  width: 100vw;
+}
+
+.slide-title {
+  position: absolute;
+  z-index: 3;
+  margin: 0 auto;
+  top: 30%;
+  left: 15%;
+  color: white;
+  font-weight: 900;
+  font-size: 2.875rem;
+}
+
+.slide-title p {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.glider-dots {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 82%;
+  right: 47%;
+}
+
+.glider-dot {
+  background: #BDBDBD;
+}
+
+.glider-dot.active {
+  background: var(--cor-destaque);
+}
