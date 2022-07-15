@@ -3,6 +3,7 @@
 @import './produtos-slides.css';
 @import './newsletter.css';
 @import './footer.css';
+@import './cadastro.css';
 
 :root {
   --nunito: 'Nunito', arial, helvetica, sans-serif;
