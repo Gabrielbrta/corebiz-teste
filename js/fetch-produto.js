@@ -1,3 +1,5 @@
+import initCart from "./cart.js";
+
 export default function fetchProduto() {
   const slideProdutcs = document.querySelector('[data-products="js-produtcs"]');
   if(slideProdutcs) {
@@ -71,6 +73,7 @@ export default function fetchProduto() {
       const offer = document.querySelectorAll('.off')[0].style.opacity = 0;
       verificaPreco(havePrice);
       verificaPreco(lastprice);
+      initCart();
     });
   }
 }
