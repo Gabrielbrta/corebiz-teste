@@ -4,6 +4,7 @@
 @import './newsletter.css';
 @import './footer.css';
 @import './cadastro.css';
+@import './mobile.css';
 
 :root {
   --nunito: 'Nunito', arial, helvetica, sans-serif;

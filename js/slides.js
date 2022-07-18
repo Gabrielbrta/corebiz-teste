@@ -10,7 +10,6 @@ export const glider = () => new Glider(document.querySelector('.js-carousel--sim
 });
 
 export const swiper = () => new Swiper('.swiper', {
-  
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
@@ -44,7 +43,3 @@ function removeArrows() {
     }
   }
   removeArrows()
-
-  function handleResize(event) {
-    console.log(event)
-  }
