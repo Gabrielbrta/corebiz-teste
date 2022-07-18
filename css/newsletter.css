@@ -4,6 +4,10 @@
   padding: 24px 0;
 }
 
+.newsletter.false {
+  display: none;
+}
+
 .newsletter h2 {
   font-size: 1.38rem;
   font-family: var(--lato);
