@@ -12,6 +12,10 @@
   align-items: end;
 }
 
+.header-itens .menu{
+  display: none;
+}
+
 .header-itens li {
   display: flex;
   align-items: center;

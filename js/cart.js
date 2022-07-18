@@ -25,6 +25,6 @@ export default function initCart() {
     event.preventDefault();
     cart.innerHTML = addCart(++contador);
   }
-  
+
   buttons.forEach((botao) => botao.addEventListener('click', handleCart))
 }

@@ -47,10 +47,10 @@ export default function fetchProduto() {
                     <div class="off"><p>OFF</p></div>
                     <img src="${props.imageUrl}" alt="${props.productName}"/>
                     <p class="title-products">${props.productName}<p>
-                    <img src="./assets/imagens/Rating-${props.stars}.svg" alt="produto com ${props.stars} estrelas"/>
+                    <img class="rating" src="./assets/imagens/Rating-${props.stars}.svg" alt="produto com ${props.stars} estrelas"/>
                     <p class="lastprice">de R$ ${lastCleanPrice[index]}</p>
                     <p class="products-price">por R$ ${cleanPrice[index]}</p>
-                    <p class="havePrice">ou em ${props.installments[0].quantity}x de ${precoParceladoLimpo[index]}</p>
+                    <p class="havePrice">ou em ${props.installments[0].quantity}x de R$ ${precoParceladoLimpo[index]}</p>
                     <a href="#" class="button-buy">COMPRAR</a>
                   </div>`
           slideProdutcs.innerHTML += card;
@@ -58,10 +58,10 @@ export default function fetchProduto() {
           card = `<div class="product-box swiper-slide">
                   <img src="${props.imageUrl}" alt="${props.productName}"/>
                   <p class="title-products">${props.productName}<p>
-                  <img src="./assets/imagens/Rating-${props.stars}.svg" alt="produto com ${props.stars} estrelas"/>
+                  <img class="rating" src="./assets/imagens/Rating-${props.stars}.svg" alt="produto com ${props.stars} estrelas"/>
                   <p class="lastprice">de R$ ${lastCleanPrice[index]}</p>
                   <p class="products-price">por R$ ${cleanPrice[index]}</p>
-                  <p class="havePrice">ou em ${props.installments[0]}x de</p>
+                  <p class="havePrice">ou em ${props.installments[0]}x de R$</p>
                   <a href="#" class="button-buy">COMPRAR</a>
                 </div>`
           slideProdutcs.innerHTML += card;
