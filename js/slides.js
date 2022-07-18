@@ -10,23 +10,41 @@ export const glider = () => new Glider(document.querySelector('.js-carousel--sim
 });
 
 export const swiper = () => new Swiper('.swiper', {
- 
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  loop: false,
+  
   breakpoints: {
-    320: {
+    300: {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    740: {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
-      slidesPerView: 4,
+
+    700: {
+      slidesPerView: 3,
       spaceBetween: 50,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 65,
     },
   },
 });
+
+function removeArrows() {
+  const arrows =  document.querySelectorAll('.arrows')
+  const widthWindow =  window.matchMedia('(max-width: 700px)').matches
+    if(widthWindow) {
+      arrows.forEach((item) => item.style.display = 'none')
+    } else {
+      arrows.forEach((item) => item.style.display = 'flex')
+    }
+  }
+  removeArrows()
+
+  function handleResize(event) {
+    console.log(event)
+  }

@@ -1,7 +1,8 @@
-import fetchProduto from "./fetch-produto.js"
 import { glider, swiper } from "./slides.js";
+import fetchProduto from "./fetch-produto.js";
+import postNewsletter from "./newsletter.js";
 
-
-glider();
 fetchProduto();
+postNewsletter();
+glider();
 swiper();
