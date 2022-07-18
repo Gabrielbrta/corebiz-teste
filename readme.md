@@ -14,3 +14,6 @@
 <br>
 🔗<a style="color: #e54; font-size: 18px" href="https://corebizbrta.netlify.app/" target="_blank">Link do Teste</a>
 <br>
+
+## Deixe seu Feedback!
+  [![blog](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrielbrta/)
