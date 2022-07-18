@@ -1,6 +1,8 @@
 <h1 style='text-align: center'><strong> Corebiz - Teste Front-end<strong></h1>
 
-<p style='text-align: center' ><strong>Neste teste eu aprendi a consumir APIs com Javascript para validação de emails e adicionar produtos no slide.</strong></p>
+<p><strong>Neste teste eu aprendi a consumir APIs com Javascript para validação de emails e adicionar produtos no slide.</strong></p>
+<p>O Site está responsivo de acordo com o prototipo do Figma</p>
+<p><strong>Os itens do carrinho permanecem salvos mesmo se recarregar a página</strong></p>
 
 <h2>💻 Tecnologias</h2>
 <li>JavaScript</li>
