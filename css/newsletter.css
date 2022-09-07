@@ -60,7 +60,7 @@ form.formulario.invalido input.fill {
   font-weight: bold;
 }
 
-.formulario .btn-newsletter {
+.formulario .btn-newslette {
   width: 140px;
   max-height: 48px;
   background: black;
@@ -70,6 +70,6 @@ form.formulario.invalido input.fill {
   transition: .3s;
 }
 
-.formulario .btn-newsletter:hover {
+.formulario .btn-newslette:hover {
   background: #333333;
 }

@@ -4,11 +4,11 @@ export default function postNewsletter() {
   const elements = {
     form: document.querySelector('[action="newsletter"]'),
     inputs: document.querySelectorAll('.errorpost'),
-    btnSubmit: document.querySelector('.btn-newsletter'),
+    btnSubmit: document.querySelector('.btn-newslette'),
     newsletter: document.querySelector('.newsletter'),
     cadastro: document.querySelector('.cadastro'),
   }
-  
+
   const emailForm = {
     removeClass() {
       elements.newsletter.classList.remove('false');
